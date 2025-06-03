@@ -1,0 +1,1 @@
+const express = require('express');\nconst cors = require('cors');\nconst app = express();\napp.use(cors());\napp.use(express.json());\napp.get('/', (req, res) => res.send('Hello World'));\napp.listen(3001, () => console.log('Backend server running on port 3001'));
